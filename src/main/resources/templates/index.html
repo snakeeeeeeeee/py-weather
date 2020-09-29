@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>天气信息</title>
+</head>
+<link th:href="@{/layui-v2.5.5/layui/css/layui.css}" rel="stylesheet"/>
+<script type="text/javascript" th:src="@{/layui-v2.5.5/layui/layui.js}"></script>
+<body style="height: 100%; width: 100%; text-align: center">
+<form action="/weather/export-excel"  class="layui-form"   lay-filter="example" style="margin-top: 20px" id="export-form">
+
+    <div class="layui-form-item">
+        <label class="layui-form-label">天气信息url</label>
+        <div class="layui-input-block">
+            <input type="text" name="targetUrl" id="targetUrl" placeholder="targetUrl" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+
+
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button type="submit" class="layui-btn" id="export" lay-submit="" lay-filter="demo1">下载Excel</button>
+        </div>
+    </div>
+</form>
+</body>
+<script>
+
+</script>
+</html>
